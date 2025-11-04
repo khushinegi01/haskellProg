@@ -19,8 +19,8 @@ ackermann m n
   | m > 0 && n == 0 = ackermann (m - 1) 1
   | otherwise      = ackermann (m - 1) (ackermann m (n - 1))
 
--- A(m,n)
--- A(2,2)
+-- A(m,n) => A(m,n) = A(m-1 ,A(m ,n -1))
+-- A(2,2)               =  A(1, A(2,1))
 -- → A(1, A(2,1))
 -- → A(1, A(1, A(2,0)))
 -- → A(1, A(1, A(1,1)))
