@@ -1,4 +1,4 @@
-import Distribution.Simple.Utils (xargs)
+
 identity :: a -> a
 
 identity x = x
